@@ -1162,6 +1162,9 @@
 .service-gallery__photo {
     aspect-ratio: 1 / 1;
     border-radius: var(--radius-xl);
+    background-color: var(--black-card);
+    background-size: cover;
+    background-position: center;
 }
 
 .service-gallery__photo img {

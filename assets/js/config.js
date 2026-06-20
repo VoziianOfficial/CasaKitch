@@ -74,9 +74,9 @@ window.CASAKITCH_CONFIG = {
             url: 'cabinet-replacement.html',
             image: 'assets/images/services/cabinet-replacement.jpg',
             gallery: [
-                'assets/images/services/cabinet-replacement-gallery-1.jpg',
+                'assets/images/services/full-kitchen-remodeling.jpg',
                 'assets/images/services/cabinet-replacement-gallery-2.jpg',
-                'assets/images/services/cabinet-replacement-gallery-3.jpg'
+                'assets/images/services/backsplash-tile-work.jpg'
             ],
             icon: 'archive',
             kicker: 'CABINET REPLACEMENT',
@@ -98,9 +98,9 @@ window.CASAKITCH_CONFIG = {
             url: 'countertop-installation.html',
             image: 'assets/images/services/countertop-installation.jpg',
             gallery: [
-                'assets/images/services/countertop-installation-gallery-1.jpg',
-                'assets/images/services/countertop-installation-gallery-2.jpg',
-                'assets/images/services/countertop-installation-gallery-3.jpg'
+                'assets/images/services/backsplash-tile-work.jpg',
+                'assets/images/services/backsplash-tile-work-dark-split.jpg',
+                'assets/images/services/countertop-installation.jpg'
             ],
             icon: 'panel-top',
             kicker: 'COUNTERTOP INSTALLATION',
@@ -122,9 +122,9 @@ window.CASAKITCH_CONFIG = {
             url: 'kitchen-island-design.html',
             image: 'assets/images/services/kitchen-island-design.jpg',
             gallery: [
-                'assets/images/services/kitchen-island-design-gallery-1.jpg',
-                'assets/images/services/kitchen-island-design-gallery-2.jpg',
-                'assets/images/services/kitchen-island-design-gallery-3.jpg'
+                'assets/images/services/full-kitchen-remodeling-gallery-1.jpg',
+                'assets/images/services/lighting-fixture-updates.jpg',
+                'assets/images/services/cabinet-replacement.jpg'
             ],
             icon: 'rectangle-horizontal',
             kicker: 'KITCHEN ISLAND DESIGN',
@@ -146,9 +146,9 @@ window.CASAKITCH_CONFIG = {
             url: 'backsplash-tile-work.html',
             image: 'assets/images/services/backsplash-tile-work.jpg',
             gallery: [
-                'assets/images/services/backsplash-tile-work-gallery-1.jpg',
-                'assets/images/services/backsplash-tile-work-gallery-2.jpg',
-                'assets/images/services/backsplash-tile-work-gallery-3.jpg'
+                'assets/images/services/countertop-installation.jpg',
+                'assets/images/services/full-kitchen-remodeling-gallery-2.jpg',
+                'assets/images/services/cabinet-replacement.jpg'
             ],
             icon: 'grid-2x2',
             kicker: 'BACKSPLASH & TILE WORK',
@@ -170,8 +170,8 @@ window.CASAKITCH_CONFIG = {
             url: 'lighting-fixture-updates.html',
             image: 'assets/images/services/lighting-fixture-updates.jpg',
             gallery: [
-                'assets/images/services/lighting-fixture-updates-gallery-1.jpg',
-                'assets/images/services/lighting-fixture-updates-gallery-2.jpg',
+                'assets/images/services/backsplash-tile-work.jpg',
+                'assets/images/services/cabinet-replacement-gallery-2.jpg',
                 'assets/images/services/lighting-fixture-updates-gallery-3.jpg'
             ],
             icon: 'lamp-ceiling',

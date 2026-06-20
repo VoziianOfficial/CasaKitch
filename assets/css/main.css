@@ -962,6 +962,7 @@ h6 {
 }
 
 .inner-hero__media {
+    margin: 0;
     position: relative;
     min-height: 480px;
     border-radius: var(--radius-xl);
@@ -984,6 +985,7 @@ h6 {
     height: 100%;
     min-height: 480px;
     object-fit: cover;
+    object-position: center top;
 }
 
 .inner-hero__media::after {
@@ -1006,7 +1008,7 @@ h6 {
     }
 
     .inner-hero__grid {
-        grid-template-columns: minmax(0, 0.96fr) minmax(520px, 1.04fr);
+        grid-template-columns: minmax(0, 1.24fr) minmax(400px, 0.76fr);
         gap: 0;
         align-items: stretch;
         height: 620px;
@@ -1020,10 +1022,12 @@ h6 {
         flex-direction: column;
         justify-content: center;
         height: 100%;
+        width: 100%;
+        min-width: 0;
         padding-top: 40px;
         padding-bottom: 70px;
         padding-left: max(20px, calc((100vw - var(--container)) / 2));
-        padding-right: clamp(28px, 4vw, 64px);
+        padding-right: clamp(16px, 2.2vw, 34px);
     }
 
     .inner-hero__media {

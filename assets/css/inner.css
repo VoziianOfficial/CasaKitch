@@ -2064,3 +2064,21 @@
         font-size: 1rem;
     }
 }
+
+/* Testimonials editorial photo — wider and slightly shifted left */
+@media (min-width: 981px) {
+    .about-testimonials--editorial .about-testimonials-editorial {
+        grid-template-columns: minmax(400px, 0.5fr) minmax(0, 1fr);
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__media {
+        margin-left: -28px;
+        width: calc(100% + 28px);
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__photo {
+        width: 100%;
+        height: 420px;
+        border-radius: 24px;
+    }
+}

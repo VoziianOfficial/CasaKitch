@@ -2299,3 +2299,113 @@
     border-radius: 30px;
     overflow: hidden;
 }
+
+/* =========================================================
+   Text Strip — livelier underline accents
+   ========================================================= */
+
+.text-strip__item {
+    position: relative;
+    transition:
+        transform var(--transition-main),
+        color var(--transition-main);
+}
+
+.text-strip__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -38px;
+    width: 70px;
+    height: 1px;
+    background: var(--gold-main);
+    transform: scaleX(0.55);
+    transform-origin: left;
+    transition:
+        transform var(--transition-main),
+        width var(--transition-main);
+}
+
+.text-strip__item:hover {
+    transform: translateY(-3px);
+}
+
+.text-strip__item:hover::before {
+    width: 118px;
+    transform: scaleX(1);
+}
+
+.text-strip__item h2,
+.text-strip__item h3 {
+    position: relative;
+    display: inline;
+    background-image: linear-gradient(var(--gold-main), var(--gold-main));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0 1px;
+    transition:
+        color var(--transition-main),
+        background-size var(--transition-main);
+}
+
+.text-strip__item:hover h2,
+.text-strip__item:hover h3 {
+    color: var(--gold-dark);
+    background-size: 100% 1px;
+}
+
+.text-strip__item p {
+    margin-top: 18px;
+}
+
+.text-strip__item .gold-underline {
+    color: var(--text-dark);
+    font-weight: 700;
+    background-image: linear-gradient(var(--gold-main), var(--gold-main));
+    background-position: 0 96%;
+    background-size: 100% 1px;
+    transition:
+        color var(--transition-main),
+        background-size var(--transition-main);
+}
+
+.text-strip__item:hover .gold-underline {
+    color: var(--gold-dark);
+    background-size: 100% 2px;
+}
+
+.text-strip__item .text-strip-link {
+    position: relative;
+    display: inline-flex;
+    margin-top: 18px;
+    color: var(--black-main);
+    font-weight: 800;
+}
+
+.text-strip__item .text-strip-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 1px;
+    background: var(--gold-main);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--transition-main);
+}
+
+.text-strip__item .text-strip-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+@media (max-width: 780px) {
+    .text-strip__item::before {
+        top: -24px;
+    }
+
+    .text-strip__item:hover {
+        transform: none;
+    }
+}

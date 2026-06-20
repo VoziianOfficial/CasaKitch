@@ -1,0 +1,54 @@
+<svg class="ck-logo-mark" width="96" height="96" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CasaKitch logo">
+    <title>CasaKitch chef hat logo</title>
+
+    <path
+        d="M70 154H52C31 154 14 138 14 117C14 95 32 78 56 78C64 78 72 80 79 84C86 58 108 39 134 39C163 39 187 60 192 89C199 86 207 84 216 85C237 88 252 105 252 126C252 143 237 154 213 154H186V209C186 216 180 222 173 222H83C76 222 70 216 70 209V154Z"
+        fill="#F7F5F0"
+    />
+
+    <path
+        d="M103 116L132 87"
+        stroke="#04333B"
+        stroke-width="3"
+        stroke-linecap="round"
+        opacity="0.18"
+    />
+
+    <path
+        d="M132 136L165 103"
+        stroke="#04333B"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        opacity="0.16"
+    />
+
+    <path
+        d="M92 134L112 114"
+        stroke="#04333B"
+        stroke-width="2"
+        stroke-linecap="round"
+        opacity="0.13"
+    />
+
+    <path
+        d="M70 154H52C31 154 14 138 14 117C14 95 32 78 56 78C64 78 72 80 79 84C86 58 108 39 134 39C163 39 187 60 192 89C199 86 207 84 216 85C237 88 252 105 252 126C252 143 237 154 213 154H186V209C186 216 180 222 173 222H83C76 222 70 216 70 209V154Z"
+        stroke="#050505"
+        stroke-width="13"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    />
+
+    <path
+        d="M72 184H184"
+        stroke="#050505"
+        stroke-width="13"
+        stroke-linecap="round"
+    />
+
+    <path
+        d="M88 202H168"
+        stroke="#BFA36A"
+        stroke-width="5"
+        stroke-linecap="round"
+    />
+</svg>

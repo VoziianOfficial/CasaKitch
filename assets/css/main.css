@@ -1146,6 +1146,7 @@ h6 {
    ========================================================= */
 
 .site-footer {
+    margin-top: 34px;
     position: relative;
     background: var(--black-main);
     color: var(--white-main);

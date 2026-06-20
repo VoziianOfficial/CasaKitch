@@ -1,9 +1,6 @@
 'use strict';
 
-/* =========================================================
-   CasaKitch — Homepage JS
-   File: assets/js/home.js
-   ========================================================= */
+
 
 (function () {
     document.addEventListener('DOMContentLoaded', () => {

@@ -1,12 +1,6 @@
-/* =========================================================
-   CasaKitch — Inner Pages Styles
-   File: assets/css/inner.css
-   Used for: about.html, all-services.html, contact.html, service pages
-   ========================================================= */
 
-/* =========================================================
-   About — Dark 4 Service Cards Strip
-   ========================================================= */
+
+
 
 .about-service-strip {
     padding: 76px 0;
@@ -88,9 +82,7 @@
     line-height: 1.55;
 }
 
-/* =========================================================
-   About — Three Steps Split
-   ========================================================= */
+
 
 .about-steps {
     overflow: hidden;
@@ -197,9 +189,7 @@
     object-fit: cover;
 }
 
-/* =========================================================
-   About — Testimonials
-   ========================================================= */
+
 
 .about-testimonials {
     overflow: hidden;
@@ -344,9 +334,7 @@
     stroke-width: 1.8;
 }
 
-/* =========================================================
-   About — FAQ With Large Logo
-   ========================================================= */
+
 
 .about-faq {
     position: relative;
@@ -376,9 +364,7 @@
     top: 120px;
 }
 
-/* =========================================================
-   All Services — Icon Marquee
-   ========================================================= */
+
 
 .icon-marquee {
     padding: 42px 0;
@@ -459,9 +445,7 @@
     }
 }
 
-/* =========================================================
-   All Services — Why Cards
-   ========================================================= */
+
 
 .services-why__grid {
     display: grid;
@@ -539,9 +523,7 @@
     font-size: 0.94rem;
 }
 
-/* =========================================================
-   All Services — Interactive Showcase
-   ========================================================= */
+
 
 .services-showcase {
     position: relative;
@@ -675,9 +657,7 @@
     stroke-width: 1.4;
 }
 
-/* =========================================================
-   All Services — Materials Circle Strip
-   ========================================================= */
+
 
 .material-strip {
     overflow: hidden;
@@ -753,9 +733,7 @@
     transform-origin: left;
 }
 
-/* =========================================================
-   Shared Two Column Text Strip
-   ========================================================= */
+
 
 .text-strip {
     padding: 76px 0;
@@ -792,9 +770,7 @@
     color: var(--text-muted);
 }
 
-/* =========================================================
-   Contact — Icon Strip
-   ========================================================= */
+
 
 .contact-icon-strip {
     padding: 40px 0;
@@ -850,9 +826,7 @@
     stroke-width: 1.25;
 }
 
-/* =========================================================
-   Contact — Intro / Form / Photo Split
-   ========================================================= */
+
 
 .contact-intro__grid {
     display: grid;
@@ -962,9 +936,7 @@
     object-fit: cover;
 }
 
-/* =========================================================
-   Service Detail Pages
-   ========================================================= */
+
 
 .detail-marquee {
     padding: 34px 0;
@@ -1185,9 +1157,7 @@
     object-fit: cover;
 }
 
-/* =========================================================
-   Responsive
-   ========================================================= */
+
 
 @media (max-width: 1180px) {
 
@@ -1461,7 +1431,7 @@
     accent-color: var(--gold-main);
 }
 
-/* Smaller and wider inner/service/contact/about hero H1 */
+
 .inner-hero__content {
     max-width: 860px;
 }
@@ -1482,9 +1452,7 @@
     }
 }
 
-/* =========================================================
-   About Testimonials — Editorial Reference Style
-   ========================================================= */
+
 
 .about-testimonials--editorial {
     overflow: hidden;
@@ -1646,7 +1614,7 @@
     font-weight: 600;
 }
 
-/* Tablet */
+
 @media (max-width: 1100px) {
     .about-testimonials--editorial .about-testimonials-editorial {
         grid-template-columns: 240px minmax(0, 1fr);
@@ -1658,7 +1626,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 860px) {
     .about-testimonials--editorial .about-testimonials-editorial {
         grid-template-columns: 1fr;
@@ -1686,12 +1654,12 @@
     }
 }
 
-/* Wider testimonials editorial title */
+
 .about-testimonials--editorial .about-testimonials-editorial__title {
     max-width: 620px;
 }
 
-/* Reduce top padding for editorial testimonials section */
+
 .about-testimonials--editorial {
     padding-top: 55px;
 }
@@ -1702,10 +1670,7 @@
     }
 }
 
-/* =========================================================
-   Editorial Split Reverse — photo left / text right
-   Isolated section
-   ========================================================= */
+
 
 .editorial-split-reverse {
     overflow: hidden;
@@ -1811,7 +1776,7 @@
     margin-top: 20px;
 }
 
-/* Tablet */
+
 @media (max-width: 980px) {
     .editorial-split-reverse__grid {
         grid-template-columns: 1fr;
@@ -1832,7 +1797,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 680px) {
     .editorial-split-reverse__photo {
         height: 290px;
@@ -1863,7 +1828,7 @@
     }
 }
 
-/* Editorial split photo — softer radius and taller image */
+
 .editorial-split-reverse__photo {
     height: 480px;
     border-radius: 26px;
@@ -1891,7 +1856,7 @@
     }
 }
 
-/* Testimonials editorial photo — softer radius */
+
 .about-testimonials--editorial .about-testimonials-editorial__photo {
     border-radius: 24px;
     overflow: hidden;
@@ -1901,9 +1866,7 @@
     border-radius: inherit;
 }
 
-/* =========================================================
-   Border Notes Strip — black horizontal section
-   ========================================================= */
+
 
 .border-notes-strip {
     position: relative;
@@ -2026,7 +1989,7 @@
     transform: scaleX(1.35);
 }
 
-/* Tablet */
+
 @media (max-width: 1180px) {
     .border-notes-strip__grid {
         display: flex;
@@ -2043,7 +2006,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 680px) {
     .border-notes-strip {
         padding: 34px 0;
@@ -2065,7 +2028,7 @@
     }
 }
 
-/* Testimonials editorial photo — wider and slightly shifted left */
+
 @media (min-width: 981px) {
     .about-testimonials--editorial .about-testimonials-editorial {
         grid-template-columns: minmax(400px, 0.5fr) minmax(0, 1fr);
@@ -2083,7 +2046,7 @@
     }
 }
 
-/* Material strip heading — smaller, centered and wider */
+
 .material-strip__head {
     width: 100%;
     max-width: 100%;
@@ -2132,9 +2095,7 @@
 }
 
 
-/* =========================================================
-   All Services — Main Pages Cards With Dark Photo Background
-   ========================================================= */
+
 
 .main-pages-cards {
     position: relative;
@@ -2266,7 +2227,7 @@
     transform: translateY(-2px);
 }
 
-/* Tablet */
+
 @media (max-width: 980px) {
     .main-pages-cards {
         min-height: auto;
@@ -2283,7 +2244,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 680px) {
     .main-pages-cards {
         padding: 88px 0 42px;
@@ -2300,9 +2261,7 @@
     overflow: hidden;
 }
 
-/* =========================================================
-   Text Strip — livelier underline accents
-   ========================================================= */
+
 
 .text-strip__item {
     position: relative;
@@ -2410,7 +2369,7 @@
     }
 }
 
-/* Contact intro — use dark teal accent only */
+
 .contact-intro .gold-underline {
     color: var(--teal-deep);
     font-weight: 800;
@@ -2449,7 +2408,7 @@
 }
 
 
-/* Contact Project — make the photos themselves bigger and wider */
+
 @media (min-width: 981px) {
     .contact-project__photos {
         display: grid;
@@ -2485,9 +2444,7 @@
     }
 }
 
-/* =========================================================
-   Contact Dark Guide — calm dark editorial section
-   ========================================================= */
+
 
 .contact-dark-guide {
     position: relative;
@@ -2650,9 +2607,7 @@
     }
 }
 
-/* =========================================================
-   Contact Border Cards — black section, no photos, no heading
-   ========================================================= */
+
 
 .contact-border-cards {
     position: relative;
@@ -2826,9 +2781,7 @@
 }
 
 
-/* =========================================================
-   Contact Question Board — not accordion
-   ========================================================= */
+
 
 .contact-question-board {
     position: relative;
@@ -3101,7 +3054,7 @@
     }
 }
 
-/* Contact Question Board — smaller answer title */
+
 .contact-question-board__answer [data-contact-answer-title] {
     max-width: 430px;
     font-size: clamp(1.35rem, 2.35vw, 2.45rem);
@@ -3109,7 +3062,7 @@
     letter-spacing: -0.055em;
 }
 
-/* About testimonials photo — center on tablet/mobile */
+
 @media (max-width: 980px) {
     .about-testimonials--editorial .about-testimonials-editorial {
         grid-template-columns: 1fr;
@@ -3162,7 +3115,7 @@
     }
 }
 
-/* Contact icon strip — one row on tablet/mobile */
+
 @media (max-width: 980px) {
     .contact-icon-strip__grid {
         display: flex !important;
@@ -3218,7 +3171,7 @@
     }
 }
 
-/* Service Gallery — bigger equal photos */
+
 .service-gallery .container {
     width: min(100% - 40px, var(--container-wide));
 }
@@ -3269,7 +3222,7 @@
     }
 }
 
-/* Related Services — centered full-width heading */
+
 .related-services__head {
     width: 100%;
     max-width: 100%;
@@ -3305,7 +3258,7 @@
     }
 }
 
-/* Related Services — make heading truly wider */
+
 .related-services .container {
     width: min(100% - 40px, var(--container-wide));
 }
@@ -3325,9 +3278,7 @@
     text-align: center;
 }
 
-/* =========================================================
-   Service Dark Split — text + small points + large photo
-   ========================================================= */
+
 
 .service-dark-split {
     position: relative;
@@ -3493,7 +3444,7 @@
     object-fit: cover;
 }
 
-/* Tablet */
+
 @media (max-width: 1060px) {
     .service-dark-split__grid {
         grid-template-columns: 1fr;
@@ -3518,7 +3469,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 680px) {
     .service-dark-split {
         padding: 46px 0;
@@ -3545,7 +3496,7 @@
     }
 }
 
-/* Service Feature — bigger photo and slightly wider to the left */
+
 @media (min-width: 981px) {
     .service-feature__grid {
         grid-template-columns: minmax(520px, 1.08fr) minmax(0, 0.92fr);
@@ -3588,9 +3539,7 @@
         min-height: 320px;
     }
 }
-/* =========================================================
-   Service Feature — horizontal text card + wide photo card
-   ========================================================= */
+
 
 .service-feature .container {
     width: min(100% - 40px, var(--container-wide));
@@ -3642,7 +3591,7 @@
     max-width: 850px;
 }
 
-/* If counters exist inside this section */
+
 .service-feature .service-counters {
     margin-top: 24px;
 }
@@ -3694,7 +3643,7 @@
     }
 }
 
-/* Service Dark Split — round photo on desktop only */
+
 @media (min-width: 1061px) {
     .service-dark-split__media {
         justify-self: end;

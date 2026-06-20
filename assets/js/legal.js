@@ -1,9 +1,6 @@
 'use strict';
 
-/* =========================================================
-   CasaKitch — Legal Pages JS
-   File: assets/js/legal.js
-   ========================================================= */
+
 
 (function () {
     const config = window.CASAKITCH_CONFIG || {};

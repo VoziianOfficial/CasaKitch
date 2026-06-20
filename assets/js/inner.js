@@ -1,10 +1,6 @@
 'use strict';
 
-/* =========================================================
-   CasaKitch — Inner Pages JS
-   File: assets/js/inner.js
-   Used for: about.html, all-services.html, contact.html, service pages
-   ========================================================= */
+
 
 (function () {
     document.addEventListener('DOMContentLoaded', () => {
@@ -16,9 +12,7 @@
         initContactQuestionBoard();
     });
 
-    /* =========================================================
-       Testimonials Swiper
-       ========================================================= */
+    
 
     function initTestimonialsSlider() {
         const slider = document.querySelector('[data-testimonials-slider]');
@@ -72,9 +66,7 @@
         window.CasaKitch?.refreshAos?.();
     }
 
-    /* =========================================================
-       Marquees
-       ========================================================= */
+    
 
     function initIconMarquees() {
         const iconTracks = document.querySelectorAll('[data-icon-marquee-track]');
@@ -101,9 +93,7 @@
         window.CasaKitch?.refreshIcons?.();
     }
 
-    /* =========================================================
-       All Services Interactive Showcase
-       ========================================================= */
+    
 
     function initServicesShowcase() {
         const showcase = document.querySelector('[data-services-showcase]');
@@ -217,9 +207,7 @@
         activateQuestion(questions[0]);
     }
 
-    /* =========================================================
-       Service Page Content From Config
-       ========================================================= */
+    
 
     function initServicePageContent() {
         const service = window.CasaKitch?.getCurrentService?.();
@@ -362,9 +350,7 @@
             .join('');
     }
 
-    /* =========================================================
-       Counters
-       ========================================================= */
+    
 
     function initServiceCounters() {
         const counters = Array.from(document.querySelectorAll('[data-count]'));
@@ -424,9 +410,7 @@
         counters.forEach(animateCounter);
     }
 
-    /* =========================================================
-       Local Helpers
-       ========================================================= */
+    
 
     function escapeHtml(value) {
         if (window.CasaKitch?.escapeHtml) {

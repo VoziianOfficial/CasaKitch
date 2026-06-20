@@ -1,9 +1,6 @@
 'use strict';
 
-/* =========================================================
-   CasaKitch — Global JS
-   File: assets/js/main.js
-   ========================================================= */
+
 
 (function () {
     const config = window.CASAKITCH_CONFIG || {};
@@ -58,9 +55,7 @@
         refreshAos();
     });
 
-    /* =========================================================
-       Helpers
-       ========================================================= */
+    
 
     function qs(selector, parent = document) {
         return parent.querySelector(selector);
@@ -166,9 +161,7 @@
         }
     }
 
-    /* =========================================================
-       Global Text Injection
-       ========================================================= */
+    
 
     function injectGlobalText() {
         qsa(selectors.currentYear).forEach((node) => {
@@ -204,9 +197,7 @@
         });
     }
 
-    /* =========================================================
-       Brand Rendering
-       ========================================================= */
+    
 
     function getBrandMarkup() {
         const name = safeText(config.company?.name, 'CasaKitch');
@@ -240,9 +231,7 @@
         });
     }
 
-    /* =========================================================
-       Header Navigation
-       ========================================================= */
+    
 
     function renderNavigation() {
         const navContainers = qsa(selectors.mainNav);
@@ -372,9 +361,7 @@
         window.addEventListener('scroll', onScroll, { passive: true });
     }
 
-    /* =========================================================
-       Mobile Menu
-       ========================================================= */
+    
 
     function renderMobileMenu() {
         const menu = qs(selectors.mobileMenu);
@@ -518,9 +505,7 @@
         refreshIcons();
     }
 
-    /* =========================================================
-       Footer
-       ========================================================= */
+    
 
     function renderFooter() {
         qsa(selectors.footerDescription).forEach((node) => {
@@ -608,9 +593,7 @@
         });
     }
 
-    /* =========================================================
-       Final CTA
-       ========================================================= */
+    
 
     function renderFinalCta() {
         qsa(selectors.finalCta).forEach((container) => {
@@ -639,9 +622,7 @@
         });
     }
 
-    /* =========================================================
-       Smooth Scroll
-       ========================================================= */
+    
 
     function initSmoothScroll() {
         qsa('a[href^="#"], a[href*=".html#"]').forEach((link) => {
@@ -681,9 +662,7 @@
         });
     }
 
-    /* =========================================================
-       Accordions
-       ========================================================= */
+    
 
     function initAccordions() {
         qsa(selectors.accordion).forEach((accordion) => {
@@ -724,9 +703,7 @@
         init: initAccordions
     };
 
-    /* =========================================================
-       Forms
-       ========================================================= */
+    
 
     function renderServiceSelects() {
         qsa(selectors.serviceSelect).forEach((select) => {
@@ -828,9 +805,7 @@
         messageBox.className = `form-message is-visible is-${type}`;
     }
 
-    /* =========================================================
-       Cookie Banner
-       ========================================================= */
+    
 
     function initCookieBanner() {
         const banner = qs(selectors.cookieBanner);
@@ -890,9 +865,7 @@
         });
     }
 
-    /* =========================================================
-       Public Utilities For Page Scripts
-       ========================================================= */
+    
 
     window.CasaKitch = {
         config,

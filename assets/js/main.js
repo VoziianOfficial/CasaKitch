@@ -387,7 +387,11 @@
         const services = config.services || [];
 
         menu.innerHTML = `
-            <div class="mobile-menu__inner">
+    <button class="mobile-menu__close" type="button" data-menu-close aria-label="Close menu">
+        <i data-lucide="x" aria-hidden="true"></i>
+    </button>
+
+    <div class="mobile-menu__inner">
                 <div class="mobile-menu__group">
                     <p class="mobile-menu__title">Navigation</p>
                     ${pageLinks
@@ -448,6 +452,12 @@
         toggles.forEach((toggle) => {
             toggle.addEventListener('click', () => {
                 state.mobileMenuOpen ? closeMobileMenu() : openMobileMenu();
+            });
+
+            qsa('[data-menu-close]', menu).forEach((button) => {
+                button.addEventListener('click', () => {
+                    closeMobileMenu();
+                });
             });
         });
 

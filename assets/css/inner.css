@@ -3109,3 +3109,111 @@
     letter-spacing: -0.055em;
 }
 
+/* About testimonials photo — center on tablet/mobile */
+@media (max-width: 980px) {
+    .about-testimonials--editorial .about-testimonials-editorial {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__media {
+        width: 100%;
+        max-width: 640px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        justify-self: center;
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__photo {
+        width: 100%;
+        max-width: 640px;
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 24px;
+        transform: none !important;
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__controls {
+        justify-content: center;
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__content {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .about-testimonials--editorial .about-testimonials-editorial__media {
+        max-width: 100%;
+    }
+
+    .about-testimonials--editorial .about-testimonials-editorial__photo {
+        max-width: 100%;
+        height: 330px;
+        border-radius: 22px;
+    }
+}
+
+/* Contact icon strip — one row on tablet/mobile */
+@media (max-width: 980px) {
+    .contact-icon-strip__grid {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 4px 0 8px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .contact-icon-strip__grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .contact-icon-strip__link {
+        flex: 0 0 62px;
+        width: 62px;
+        height: 62px;
+        min-width: 62px;
+    }
+
+    .contact-icon-strip__link i,
+    .contact-icon-strip__link svg {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 680px) {
+    .contact-icon-strip__grid {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-inline: calc(var(--container-padding, 14px) * -1);
+        padding-inline: var(--container-padding, 14px);
+    }
+
+    .contact-icon-strip__link {
+        flex: 0 0 52px;
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+    }
+
+    .contact-icon-strip__link i,
+    .contact-icon-strip__link svg {
+        width: 29px;
+        height: 29px;
+    }
+}

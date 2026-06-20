@@ -327,7 +327,7 @@
         qsa('a[href^="mailto:"]').forEach((link) => {
             link.href = `mailto:${email}`;
 
-            if (!link.textContent.trim() || link.textContent.includes('@')) {
+            if (link.children.length === 0 && (!link.textContent.trim() || link.textContent.includes('@'))) {
                 link.textContent = email;
             }
         });
@@ -335,7 +335,7 @@
         qsa('a[href^="tel:"]').forEach((link) => {
             link.href = `tel:${phoneRaw}`;
 
-            if (!link.textContent.trim() || /[\d()+\-\s]/.test(link.textContent.trim())) {
+            if (link.children.length === 0 && (!link.textContent.trim() || /[\d()+\-\s]/.test(link.textContent.trim()))) {
                 link.textContent = phoneDisplay;
             }
         });

@@ -1952,6 +1952,17 @@ h6 {
         box-shadow var(--transition-main);
 }
 
+.contact-band__item-icon {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(191, 163, 106, 0.24);
+    border-radius: 18px;
+    background: rgba(191, 163, 106, 0.08);
+}
+
 .contact-band__item::before {
     content: "";
     position: absolute;
@@ -1980,8 +1991,8 @@ h6 {
     transform: translateX(130%);
 }
 
-.contact-band__item i,
-.contact-band__item svg {
+.contact-band__item-icon i,
+.contact-band__item-icon svg {
     width: 34px;
     height: 34px;
     color: var(--gold-main);
@@ -1991,10 +2002,10 @@ h6 {
         transform var(--transition-main);
 }
 
-.contact-band__item:hover i,
-.contact-band__item:hover svg,
-.contact-band__item:focus-visible i,
-.contact-band__item:focus-visible svg {
+.contact-band__item:hover .contact-band__item-icon i,
+.contact-band__item:hover .contact-band__item-icon svg,
+.contact-band__item:focus-visible .contact-band__item-icon i,
+.contact-band__item:focus-visible .contact-band__item-icon svg {
     color: var(--gold-soft);
     transform: translateY(-2px) rotate(-4deg) scale(1.08);
 }
@@ -2069,8 +2080,13 @@ h6 {
         border-radius: 22px;
     }
 
-    .contact-band__item i,
-    .contact-band__item svg {
+    .contact-band__item-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contact-band__item-icon i,
+    .contact-band__item-icon svg {
         width: 30px;
         height: 30px;
     }

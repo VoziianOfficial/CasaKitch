@@ -35,6 +35,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         initThirdParty();
         injectGlobalText();
+        applyConfigEverywhere();
         renderBrands();
         renderNavigation();
         renderHeaderActions();
@@ -197,6 +198,155 @@
         });
     }
 
+    function applyConfigEverywhere() {
+        const companyName = safeText(config.company?.name, 'CasaKitch');
+        const companyNameUpper = companyName.toUpperCase();
+
+        const companyId = safeText(config.company?.companyId, 'CK-KITCH-2048');
+        const address = safeText(config.company?.address, 'USA Service Area');
+        const serviceArea = safeText(config.company?.serviceArea, '');
+
+        const email = safeText(config.contact?.email, 'hello@casakitch.com');
+        const phoneRaw = safeText(config.contact?.phoneRaw, '+18885550148');
+        const phoneDisplay = safeText(config.contact?.phoneDisplay, '(888) 555-0148');
+        const phoneButtonText = safeText(config.contact?.phoneButtonText, 'Start Your Request');
+        const supportHours = safeText(config.contact?.supportHours, '');
+
+        const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+
+        const replacements = [
+            ['CasaKitch', companyName],
+            ['CASAKITCH', companyNameUpper],
+            ['CK-KITCH-2048', companyId],
+            ['USA Service Area', address],
+            ['Independent kitchen remodeling provider matching across selected areas in the United States', serviceArea],
+            ['hello@casakitch.com', email],
+            ['(888) 555-0148', phoneDisplay],
+            ['+18885550148', phoneRaw],
+            ['Start Your Request', phoneButtonText],
+            ['Mon–Fri, 8:00 AM–7:00 PM', supportHours]
+        ].filter((item) => item[1] !== '');
+
+        const replaceValue = (value) => {
+            let result = safeText(value);
+
+            replacements.forEach(([from, to]) => {
+                if (!from || from === to) return;
+                result = result.split(from).join(to);
+            });
+
+            return result;
+        };
+
+        const skipTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'SVG']);
+
+        const walkTextNodes = (root) => {
+            const walker = document.createTreeWalker(
+                root,
+                NodeFilter.SHOW_TEXT,
+                {
+                    acceptNode(node) {
+                        const parent = node.parentElement;
+
+                        if (!parent || skipTags.has(parent.tagName)) {
+                            return NodeFilter.FILTER_REJECT;
+                        }
+
+                        if (!node.nodeValue || !node.nodeValue.trim()) {
+                            return NodeFilter.FILTER_REJECT;
+                        }
+
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                }
+            );
+
+            const nodes = [];
+
+            while (walker.nextNode()) {
+                nodes.push(walker.currentNode);
+            }
+
+            nodes.forEach((node) => {
+                node.nodeValue = replaceValue(node.nodeValue);
+            });
+        };
+
+        const updateAttributes = () => {
+            const attrsToReplace = [
+                'alt',
+                'title',
+                'aria-label',
+                'placeholder',
+                'content',
+                'value',
+                'data-source',
+                'data-cta-title',
+                'data-cta-text',
+                'data-cta-button'
+            ];
+
+            qsa('*').forEach((element) => {
+                if (skipTags.has(element.tagName)) return;
+
+                attrsToReplace.forEach((attr) => {
+                    if (element.hasAttribute(attr)) {
+                        element.setAttribute(attr, replaceValue(element.getAttribute(attr)));
+                    }
+                });
+            });
+        };
+
+        const setText = (selector, value) => {
+            qsa(selector).forEach((node) => {
+                node.textContent = value;
+            });
+        };
+
+        const setHref = (selector, value) => {
+            qsa(selector).forEach((node) => {
+                node.setAttribute('href', value);
+            });
+        };
+
+        setText('[data-company-name], [data-site-name]', companyName);
+        setText('[data-company-name-upper]', companyNameUpper);
+        setText('[data-company-id]', companyId);
+        setText('[data-company-address], [data-site-address]', address);
+        setText('[data-service-area]', serviceArea);
+        setText('[data-contact-email], [data-site-email]', email);
+        setText('[data-contact-phone], [data-site-phone]', phoneDisplay);
+        setText('[data-contact-phone-raw]', phoneRaw);
+        setText('[data-phone-button-text]', phoneButtonText);
+        setText('[data-support-hours]', supportHours);
+
+        setHref('[data-contact-email-link], [data-site-email-link]', `mailto:${email}`);
+        setHref('[data-contact-phone-link], [data-site-phone-link]', `tel:${phoneRaw}`);
+        setHref('[data-company-address-link], [data-site-address-link]', mapUrl);
+
+        qsa('a[href^="mailto:"]').forEach((link) => {
+            link.href = `mailto:${email}`;
+
+            if (!link.textContent.trim() || link.textContent.includes('@')) {
+                link.textContent = email;
+            }
+        });
+
+        qsa('a[href^="tel:"]').forEach((link) => {
+            link.href = `tel:${phoneRaw}`;
+
+            if (!link.textContent.trim() || /[\d()+\-\s]/.test(link.textContent.trim())) {
+                link.textContent = phoneDisplay;
+            }
+        });
+
+        qsa('input[name="phone"]').forEach((input) => {
+            input.placeholder = phoneDisplay;
+        });
+
+        walkTextNodes(document.body);
+        updateAttributes();
+    }
     
 
     function getBrandMarkup() {

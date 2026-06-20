@@ -2409,3 +2409,78 @@
         transform: none;
     }
 }
+
+/* Contact intro — use dark teal accent only */
+.contact-intro .gold-underline {
+    color: var(--teal-deep);
+    font-weight: 800;
+    background-image: linear-gradient(var(--teal-main), var(--teal-main));
+    background-position: 0 96%;
+    background-size: 100% 1px;
+}
+
+.contact-intro h2 {
+    position: relative;
+}
+
+.contact-intro h2::after {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 1px;
+    margin-top: 18px;
+    background: var(--teal-main);
+    transform: scaleX(0.75);
+    transform-origin: left;
+    transition: transform var(--transition-main);
+}
+
+.contact-intro:hover h2::after {
+    transform: scaleX(1.35);
+}
+
+.contact-intro p {
+    color: var(--text-muted);
+}
+
+.contact-intro p:hover .gold-underline {
+    color: var(--teal-main);
+    background-size: 100% 2px;
+}
+
+
+/* Contact Project — make the photos themselves bigger and wider */
+@media (min-width: 981px) {
+    .contact-project__photos {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.9fr) minmax(420px, 1.25fr);
+        gap: 24px;
+        align-items: end;
+        justify-self: end;
+        width: min(calc(100% + 140px), 920px);
+        margin-left: -40px;
+        margin-right: -80px;
+    }
+
+    .contact-project__photo {
+        width: 100%;
+        min-height: 590px;
+        border-radius: 32px;
+    }
+
+    .contact-project__photo img {
+        width: 100%;
+        height: 100%;
+        min-height: 590px;
+        object-fit: cover;
+    }
+
+    .contact-project__photo--small {
+        width: 100%;
+        min-height: 460px;
+    }
+
+    .contact-project__photo--small img {
+        min-height: 460px;
+    }
+}

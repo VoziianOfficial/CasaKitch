@@ -32,11 +32,13 @@
         const swiper = new Swiper(slider, {
             loop: true,
             speed: 850,
-            spaceBetween: 16,
+            spaceBetween: 18,
             slidesPerView: 1,
+            slidesPerGroup: 1,
             grabCursor: true,
+            watchOverflow: true,
             autoplay: {
-                delay: 5200,
+                delay: 5000,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true
             },
@@ -49,7 +51,7 @@
                 onlyInViewport: true
             },
             breakpoints: {
-                920: {
+                861: {
                     slidesPerView: 2,
                     spaceBetween: 18
                 }

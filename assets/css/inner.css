@@ -1890,3 +1890,13 @@
         border-radius: 22px;
     }
 }
+
+/* Testimonials editorial photo — softer radius */
+.about-testimonials--editorial .about-testimonials-editorial__photo {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.about-testimonials--editorial .about-testimonials-editorial__photo img {
+    border-radius: inherit;
+}

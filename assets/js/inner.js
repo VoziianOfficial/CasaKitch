@@ -13,6 +13,7 @@
         initServicesShowcase();
         initServiceCounters();
         initServicePageContent();
+        initContactQuestionBoard();
     });
 
     /* =========================================================
@@ -162,6 +163,58 @@
         });
 
         activateService(links[0]);
+    }
+
+    function initContactQuestionBoard() {
+        const questions = Array.from(document.querySelectorAll('[data-contact-question]'));
+        const answerTitle = document.querySelector('[data-contact-answer-title]');
+        const answerText = document.querySelector('[data-contact-answer-text]');
+        const answerLink = document.querySelector('[data-contact-answer-link]');
+        const answerLinkLabel = document.querySelector('[data-contact-answer-link-label]');
+
+        if (!questions.length || !answerTitle || !answerText) {
+            return;
+        }
+
+        const activateQuestion = (question) => {
+            questions.forEach((item) => {
+                item.classList.remove('is-active');
+                item.setAttribute('aria-selected', 'false');
+            });
+
+            question.classList.add('is-active');
+            question.setAttribute('aria-selected', 'true');
+
+            answerTitle.textContent = question.dataset.answerTitle || '';
+            answerText.textContent = question.dataset.answerText || '';
+
+            if (answerLink && question.dataset.answerLink) {
+                answerLink.href = question.dataset.answerLink;
+            }
+
+            if (answerLinkLabel && question.dataset.answerLinkLabel) {
+                answerLinkLabel.textContent = question.dataset.answerLinkLabel;
+            }
+
+            window.CasaKitch?.refreshIcons?.();
+        };
+
+        questions.forEach((question, index) => {
+            question.setAttribute('role', 'tab');
+            question.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+
+            question.addEventListener('click', () => {
+                activateQuestion(question);
+            });
+
+            question.addEventListener('mouseenter', () => {
+                if (window.matchMedia('(min-width: 861px)').matches) {
+                    activateQuestion(question);
+                }
+            });
+        });
+
+        activateQuestion(questions[0]);
     }
 
     /* =========================================================

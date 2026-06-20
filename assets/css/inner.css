@@ -527,7 +527,7 @@
 
 .services-showcase {
     position: relative;
-    min-height: 720px;
+    height: 720px;
     display: flex;
     align-items: stretch;
     background: var(--black-main);
@@ -566,7 +566,9 @@
     position: relative;
     z-index: 3;
     width: min(100% - 40px, var(--container-wide));
+    height: 100%;
     margin-inline: auto;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 180px minmax(0, 1fr);
     gap: clamp(28px, 7vw, 100px);
@@ -591,7 +593,7 @@
 
 .services-showcase__list {
     justify-self: end;
-    width: min(100%, 780px);
+    width: min(100%, 720px);
     display: grid;
     border-top: 1px solid rgba(255, 255, 255, 0.22);
 }
@@ -602,7 +604,7 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 18px;
-    padding: clamp(18px, 3vw, 28px) 0;
+    padding: clamp(14px, 2.2vw, 22px) 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.22);
     color: rgba(255, 255, 255, 0.78);
     transition: color var(--transition-main);
@@ -643,7 +645,7 @@
 
 .services-showcase__link-title {
     font-family: var(--font-display);
-    font-size: clamp(1.55rem, 4vw, 4rem);
+    font-size: clamp(1.35rem, 3.2vw, 3.2rem);
     font-weight: 500;
     line-height: 0.95;
     letter-spacing: -0.07em;
@@ -651,8 +653,8 @@
 
 .services-showcase__link-icon svg,
 .services-showcase__link-icon i {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     color: var(--gold-main);
     stroke-width: 1.4;
 }
@@ -1238,16 +1240,25 @@
     }
 
     .services-showcase {
-        min-height: 620px;
+        height: 620px;
     }
 
     .services-showcase__inner {
         width: min(100% - 28px, var(--container-wide));
-        padding: 70px 0;
+        padding: 56px 0;
     }
 
     .services-showcase__wordmark {
         font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+    .services-showcase__link {
+        gap: 14px;
+        padding: 12px 0;
+    }
+
+    .services-showcase__link-title {
+        font-size: clamp(1.25rem, 4.8vw, 2.4rem);
     }
 
     .material-strip__list {

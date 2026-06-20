@@ -121,7 +121,7 @@
             link.classList.add('is-active');
             link.setAttribute('aria-selected', 'true');
 
-            showcase.style.setProperty('--showcase-image', `url('${image}')`);
+            background.style.backgroundImage = `url("${image}")`;
 
             if (photoLink) {
                 photoLink.href = url;

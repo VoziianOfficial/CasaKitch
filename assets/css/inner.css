@@ -3670,3 +3670,105 @@
         margin-left: auto;
     }
 }
+
+
+@media (max-width: 1180px) {
+    .service-dark-split__grid {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+    }
+
+    .service-dark-split__media {
+        justify-self: center !important;
+        width: min(100%, 680px) !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 440px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        transform: none !important;
+        border-radius: 28px !important;
+        aspect-ratio: 16 / 10;
+    }
+
+    .service-dark-split__media img {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 440px !important;
+        object-fit: cover;
+        border-radius: inherit;
+    }
+}
+
+@media (max-width: 680px) {
+    .service-dark-split__media {
+        width: 100% !important;
+        min-height: 310px !important;
+        aspect-ratio: 1 / 1;
+        border-radius: 24px !important;
+    }
+
+    .service-dark-split__media img {
+        min-height: 310px !important;
+    }
+}
+
+@media (max-width: 980px) {
+    .service-gallery .container {
+        width: min(100% - 28px, var(--container)) !important;
+    }
+
+    .service-gallery__grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+        gap: 18px;
+        width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        overflow: hidden;
+    }
+
+    .service-gallery__photo {
+        width: min(100%, 680px) !important;
+        max-width: 100% !important;
+        min-height: 420px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        transform: none !important;
+        border-radius: 26px;
+        aspect-ratio: 16 / 10;
+    }
+
+    .service-gallery__photo img {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 420px;
+        object-fit: cover;
+        border-radius: inherit;
+    }
+}
+
+@media (max-width: 680px) {
+    .service-gallery .container {
+        width: min(100% - 24px, var(--container)) !important;
+    }
+
+    .service-gallery__photo {
+        width: 100% !important;
+        min-height: 300px;
+        aspect-ratio: 1 / 1;
+        border-radius: 22px;
+    }
+
+    .service-gallery__photo img {
+        min-height: 300px;
+    }
+}
+
+/* Service Statement — remove bottom padding on tablet/mobile */
+@media (max-width: 980px) {
+    .service-statement {
+        padding-bottom: 0 !important;
+    }
+}

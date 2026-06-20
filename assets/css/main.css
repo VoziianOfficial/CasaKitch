@@ -2485,3 +2485,67 @@ h6 {
         border-radius: var(--radius-pill);
     }
 }
+
+
+@media (max-width: 980px) {
+
+    h1,
+    h2,
+    .section-title,
+    .inner-hero__title,
+    .home-hero__title,
+    .legal-hero__title,
+    .final-cta__title {
+        width: 100%;
+        max-width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center !important;
+        text-wrap: balance;
+    }
+
+    .section-kicker,
+    .section-kicker--light {
+        width: fit-content;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-text,
+    .inner-hero__text,
+    .home-hero__text,
+    .legal-hero__text,
+    .final-cta__text {
+        width: 100%;
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .btn-row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 680px) {
+
+    h1,
+    h2,
+    .section-title,
+    .inner-hero__title,
+    .home-hero__title,
+    .legal-hero__title,
+    .final-cta__title {
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+    }
+
+    .section-kicker::before {
+        width: 28px;
+    }
+}
+

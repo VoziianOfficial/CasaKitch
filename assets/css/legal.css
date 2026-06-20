@@ -243,3 +243,24 @@
         font-size: clamp(1.45rem, 9vw, 2.3rem);
     }
 }
+
+/* Smaller and wider legal hero H1 */
+.legal-hero__content {
+    max-width: 980px;
+}
+
+.legal-hero__title {
+    max-width: 980px;
+    font-size: clamp(2.8rem, 5.2vw, 5.9rem);
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+}
+
+@media (max-width: 680px) {
+    .legal-hero__title {
+        max-width: 100%;
+        font-size: clamp(2.25rem, 11vw, 3.7rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+    }
+}

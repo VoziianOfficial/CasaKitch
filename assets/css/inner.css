@@ -1460,3 +1460,24 @@
     margin-top: 3px;
     accent-color: var(--gold-main);
 }
+
+/* Smaller and wider inner/service/contact/about hero H1 */
+.inner-hero__content {
+    max-width: 860px;
+}
+
+.inner-hero__title {
+    max-width: 960px;
+    font-size: clamp(2.8rem, 5.1vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+}
+
+@media (max-width: 760px) {
+    .inner-hero__title {
+        max-width: 100%;
+        font-size: clamp(2.25rem, 11vw, 3.8rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+    }
+}

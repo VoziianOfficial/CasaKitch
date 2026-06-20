@@ -540,6 +540,8 @@
     border-radius: var(--radius-xl);
     border: 1px solid rgba(191, 163, 106, 0.3);
     background: var(--black-main);
+    background-size: cover;
+    background-position: center;
     color: transparent;
     font-family: var(--font-display);
     font-size: clamp(7rem, 18vw, 15.5rem);
@@ -550,18 +552,6 @@
     transition:
         border-color var(--transition-main),
         transform var(--transition-main);
-}
-
-.popular-service-row__number::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -2;
-    background-image: var(--number-image);
-    background-size: cover;
-    background-position: center;
-    transform: scale(1.03);
-    transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .popular-service-row__number::after {
@@ -576,11 +566,6 @@
 .popular-service-row__number:hover {
     border-color: var(--gold-main);
     transform: translateY(-4px);
-}
-
-.popular-service-row:hover .popular-service-row__number::before,
-.popular-service-row__number:hover::before {
-    transform: scale(1.1);
 }
 
 

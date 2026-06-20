@@ -57,7 +57,7 @@ window.CASAKITCH_CONFIG = {
             icon: 'layout-template',
             kicker: 'FULL KITCHEN REMODELING',
             statement: 'FULL KITCHEN REMODELING WITH A CLEARER STARTING POINT.',
-            heroHeading: 'Compare full kitchen remodeling provider options with one organized request',
+            heroHeading: 'The Full Kitchen Remodeling Process',
             heroText:
                 'CasaKitch helps homeowners start a full kitchen remodeling request, describe layout goals, material preferences, cabinet needs, lighting updates, and compare local provider paths.',
             description:
@@ -81,7 +81,7 @@ window.CASAKITCH_CONFIG = {
             icon: 'archive',
             kicker: 'CABINET REPLACEMENT',
             statement: 'CABINET UPDATES THAT START WITH STORAGE, STYLE, AND FIT.',
-            heroHeading: 'Compare cabinet replacement options for storage, finish, and kitchen flow',
+            heroHeading: '',
             heroText:
                 'CasaKitch helps homeowners describe cabinet goals, preferred finishes, storage priorities, hardware direction, and compare local provider options for cabinet-focused updates.',
             description:
@@ -105,7 +105,7 @@ window.CASAKITCH_CONFIG = {
             icon: 'panel-top',
             kicker: 'COUNTERTOP INSTALLATION',
             statement: 'SURFACE UPGRADES BUILT AROUND MATERIALS, FUNCTION, AND STYLE.',
-            heroHeading: 'Compare countertop provider options for quartz, marble, stone, and surface updates',
+            heroHeading: '',
             heroText:
                 'CasaKitch helps homeowners start a countertop-focused request, outline material preferences, edge details, island surfaces, and compare local provider options.',
             description:
@@ -129,7 +129,7 @@ window.CASAKITCH_CONFIG = {
             icon: 'rectangle-horizontal',
             kicker: 'KITCHEN ISLAND DESIGN',
             statement: 'ISLAND PLANNING FOR SEATING, STORAGE, AND FLOW.',
-            heroHeading: 'Compare kitchen island options for seating, storage, prep space, and layout flow',
+            heroHeading: 'The Island Design Process',
             heroText:
                 'CasaKitch helps homeowners describe island goals, seating needs, storage ideas, surface preferences, and compare local provider paths for kitchen island projects.',
             description:
@@ -153,7 +153,7 @@ window.CASAKITCH_CONFIG = {
             icon: 'grid-2x2',
             kicker: 'BACKSPLASH & TILE WORK',
             statement: 'TILE AND BACKSPLASH DETAILS THAT SHAPE THE WHOLE KITCHEN.',
-            heroHeading: 'Compare backsplash and tile options for texture, pattern, and kitchen character',
+            heroHeading: 'The Backsplash & Tile Process',
             heroText:
                 'CasaKitch helps homeowners outline tile preferences, backsplash style, surface details, color direction, and compare local provider options.',
             description:

@@ -939,6 +939,7 @@ h6 {
     align-items: center;
     min-height: 620px;
     padding: 40px 0 70px;
+    overflow: hidden;
 }
 
 .inner-hero__content {
@@ -1060,6 +1061,8 @@ h6 {
 }
 
 .section-nav {
+    position: relative;
+    z-index: 3;
     border-top: 1px solid var(--line-dark);
     background: var(--black-main);
 }

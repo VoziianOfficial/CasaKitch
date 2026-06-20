@@ -1130,12 +1130,10 @@ h6 {
     color: var(--white-main);
 }
 
-.final-cta__card::before {
-    content: "";
+.final-cta__bg {
     position: absolute;
     inset: 0;
     z-index: -2;
-    background-image: var(--cta-image);
     background-size: cover;
     background-position: center;
     transform: scale(1.02);
@@ -1150,7 +1148,7 @@ h6 {
     background: rgba(0, 0, 0, 0.45);
 }
 
-.final-cta__card:hover::before {
+.final-cta__card:hover .final-cta__bg {
     transform: scale(1.07);
 }
 

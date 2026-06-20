@@ -602,7 +602,8 @@
 
             container.innerHTML = `
                 <div class="container">
-                    <div class="final-cta__card shine-surface" style="--cta-image: url('${escapeHtml(image)}');" data-aos="zoom-in">
+                    <div class="final-cta__card shine-surface" data-aos="zoom-in">
+                        <div class="final-cta__bg" style="background-image: url('${escapeHtml(image)}');" aria-hidden="true"></div>
                         <div class="final-cta__content">
                             <div>
                                 <h2 class="final-cta__title">${escapeHtml(container.dataset.ctaTitle || cta.heading || '')}</h2>

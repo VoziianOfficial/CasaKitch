@@ -249,7 +249,7 @@ window.CASAKITCH_CONFIG = {
 
         homeAbout: 'assets/images/home/about-kitchen-matching.jpg',
         homeFaq: 'assets/images/home/faq-kitchen.jpg',
-        homeCta: 'assets/images/home/final-cta-kitchen.jpg',
+        homeCta: 'assets/images/about/about-cta.jpg',
 
         aboutHero: 'assets/images/about/about-hero.jpg',
         aboutSteps: 'assets/images/about/about-steps-kitchen.jpg',
@@ -258,15 +258,15 @@ window.CASAKITCH_CONFIG = {
 
         servicesHero: 'assets/images/services/all-services-hero.jpg',
         servicesShowcaseFallback: 'assets/images/services/full-kitchen-remodeling.jpg',
-        servicesCta: 'assets/images/services/services-cta.jpg',
+        servicesCta: 'assets/images/about/about-cta.jpg',
 
         contactHero: 'assets/images/contact/contact-hero.jpg',
         contactForm: 'assets/images/contact/contact-form-kitchen.jpg',
         contactPhotoOne: 'assets/images/contact/contact-project-1.jpg',
         contactPhotoTwo: 'assets/images/contact/contact-project-2.jpg',
-        contactCta: 'assets/images/contact/contact-cta.jpg',
+        contactCta: 'assets/images/about/about-cta.jpg',
 
-        commonCta: 'assets/images/common/kitchen-cta.jpg'
+        commonCta: 'assets/images/about/about-cta.jpg'
     },
 
     home: {
@@ -682,7 +682,7 @@ window.CASAKITCH_CONFIG = {
             'Share your kitchen goals and start one clear request through CasaKitch.',
         buttonLabel: 'Start Your Request',
         buttonUrl: 'contact.html#form',
-        image: 'assets/images/common/kitchen-cta.jpg'
+        image: 'assets/images/about/about-cta.jpg'
     },
 
     footer: {

@@ -3217,3 +3217,110 @@
         height: 29px;
     }
 }
+
+/* Service Gallery — bigger equal photos */
+.service-gallery .container {
+    width: min(100% - 40px, var(--container-wide));
+}
+
+.service-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(18px, 2.4vw, 34px);
+    align-items: stretch;
+}
+
+.service-gallery__photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-height: 420px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.service-gallery__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 980px) {
+    .service-gallery .container {
+        width: min(100% - 28px, var(--container));
+    }
+
+    .service-gallery__grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .service-gallery__photo {
+        min-height: 420px;
+        aspect-ratio: 16 / 10;
+        border-radius: 26px;
+    }
+}
+
+@media (max-width: 680px) {
+    .service-gallery__photo {
+        min-height: 300px;
+        aspect-ratio: 1 / 1;
+        border-radius: 22px;
+    }
+}
+
+/* Related Services — centered full-width heading */
+.related-services__head {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    margin-bottom: clamp(34px, 5vw, 58px);
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.related-services__head .section-kicker {
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.related-services__head .section-title {
+    width: 100%;
+    max-width: 1120px;
+    margin-inline: auto;
+    text-align: center;
+    text-wrap: balance;
+}
+
+@media (max-width: 680px) {
+    .related-services__head {
+        margin-bottom: 30px;
+    }
+
+    .related-services__head .section-title {
+        max-width: 100%;
+        font-size: clamp(2rem, 10vw, 3.4rem);
+        line-height: 1.02;
+    }
+}
+
+/* Related Services — make heading truly wider */
+.related-services .container {
+    width: min(100% - 40px, var(--container-wide));
+}
+
+.related-services__head {
+    width: 100%;
+    max-width: none !important;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.related-services__head .section-title {
+    width: 100%;
+    max-width: none !important;
+    margin-inline: auto;
+    text-align: center;
+}
